@@ -1,0 +1,548 @@
+  /* ------------------------------------------------------------------------------------------------------------------------------------- */
+/*********************************************************Home Page************************************************************ */
+/* ______________________________________________________________________________________________________________________________________ */
+/* Shared header by all pages */
+header {
+  display: flex;               
+  justify-content: space-between; 
+  align-items: center; 
+  background: #f8f9fa;
+  color: #0f0e0e;
+  padding: 1rem;
+}
+header h1 {
+  margin: 0;
+}
+#nav-header ul {
+  list-style: none;
+  padding: 0;
+  gap: 1rem;
+ display: flex;
+ justify-content: right;
+}
+#nav-header a {
+  color: #0f0e0e;
+  text-decoration: none;
+}
+#nav-header a:hover, #nav-header a.active {
+
+  text-decoration: underline;
+}
+#nav-header li{
+  margin-left: 20px;
+}
+/* Home and About body */
+.home-about-body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #121212;
+}
+/* Home page section */
+/* Hero */
+.hero {
+  position: relative;
+  height: 90vh; /* almost full screen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+background: url("Images/woker.jpg") no-repeat center center / cover;
+  animation: fadeIn 2s ease-in; /* subtle animation */
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5); /* dark overlay for readability */
+}
+
+.hero-cont {
+  position: relative;
+  z-index: 1; /* make sure text is above overlay */
+  max-width: 800px;
+  padding: 20px;
+  animation: slideUp 1.5s ease-out;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn-H {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: #3498db;
+  color: white;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.btn-H:hover {
+  background: #2980b9;
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+
+/* Highlights */
+.highlights .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+
+.video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .video-grid video {
+      width: 100%;
+      display: block;
+      border-radius: 8px;
+    }
+ .intro-after-hero h2{
+  text-align: center;
+ 
+ }
+.intro-after-hero p{
+   padding-left: 25px;
+  padding-right: 20px
+}
+.highlights h2{
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+/* About page section */
+.intro {
+  text-align: center;
+  padding: 2rem;
+  background: #ecf0f1;
+}
+ 
+*{
+    
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* -------------------------------------------------------hero section-------------------------------------------------- */
+
+.hero-TJ{
+    width: 100%;
+    min-height: 100vh; /* will size itself based on the height of the window browser, min makes it not fixed allowing it to grow based on content */
+    background-image: url(Images/herobg-desk.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;/* both vertically and horizontally */
+    overflow: hidden;
+    color: white;
+}
+
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    background-color: #ff0000;
+    padding: 14px 40px;
+    font-size: 14px;
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    transition: 0.5s;
+    color: white;
+}
+.hero-content-TJ{
+    padding-left: 5%;
+    margin-top: 10%;
+}
+.hero-content-TJ h1{
+    font-size: 70px;
+}
+.hero-content-TJ p{
+    margin: 10px 0 30px;
+    animation-delay: 0.5s;
+}
+.hero-content-TJ .btn{
+    padding: 15px 80px;
+    font-size: 15px;
+    animation-delay: 1s;
+
+}
+.btn:hover{
+    border-top-right-radius: 30px;
+}
+.anim-TJ{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+          transform: translateY(0px);
+    }
+}
+html {
+      scroll-behavior: smooth;
+    }
+/* --------------------------------------------------main section (content)------------------------------------------------------------ */
+.Top{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    height: auto;
+    width: 90%;
+    /* background-color: blue; */
+    margin: auto;
+    color: white;
+    
+    
+}
+.Top h3{
+  font-size: 30px;
+  margin: 10px 0 10px;
+}
+.one{
+    background-image:url(Images/civil\ eng.jpg) ;
+}
+.two{
+background-image: url(Images/Nurse.jpg);
+}
+.three{
+background-image: url(Images/data.jpg);
+}
+.four{
+    background-image: url(Images/Cybersecurity.jpg);
+
+}
+.five{
+    background-image: url(Images/argiculture\ scientist.jpg);
+}
+.col-img{
+
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+border-top-left-radius: 30px;
+border-bottom-left-radius: 30px;
+}
+
+.col-text{
+    margin: auto;
+    padding: 25px 10px 25px 35px ;
+    background-image: radial-gradient(#494949 0%,
+  #434343 45%,
+  #272727 100%);
+  background-image: cover;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+} 
+ #Top-jobs-sectio h1{
+    color: black;
+    font-size: 45px;
+    margin-left: 80px;
+    margin-top:20px;
+    margin-bottom: 20px;
+    
+}
+#Top-jobs-section{
+    /* background-color:#E5E7EB; */
+    margin-top: -19px;
+    margin-right: 12px;
+    padding-top: 5px;
+}
+
+/* ----------------------------------------------------FAQ Section------------------------------------------------------------------ */
+.FAQ-Title{
+    text-align: center;
+    margin-bottom: 10px;
+    padding-right: 80px;
+}
+.FAQ p{
+    text-align: center;
+    color: black;
+    margin-bottom: 13px;
+    font-weight: 500;
+}
+summary{
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    
+}
+summary:hover{
+    cursor: grab;
+    background-color:#BEBEBE;
+}
+.FAQ-Answer{
+    color: black;
+    padding: 10px;
+    line-height: 23px;
+}
+.FAQ{
+  
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+}
+details{
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+details[open] summary{
+    background-color: #BEBEBE;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+/********************************************************* Future Jobs Page************************************************************ */
+/* ______________________________________________________________________________________________________________________________________ */
+
+
+
+/* ---------------------------------------------------Future jobs section-------------------------------------------- */
+
+.Futurej{
+    display: flex;
+}
+.Futurej img{
+    position: sticky;
+    top: 30px;
+    width: 600px;
+    height: 700px;
+    float: left;
+    margin-left: 30px;
+    margin-top: 25px;
+    overflow: hidden;
+    border-radius: 30px;
+}
+.dye{
+    flex: 1;
+    padding-right: 45px;
+    padding-left: 45px;
+}
+.dye h1{
+    font-size: 35px;
+    line-height: 50px;
+    color: black;
+}
+.dye p{
+    line-height: 25px;
+    word-spacing: 2px;
+    color: black;
+}
+
+/* ------------------------------------------------------Timeline section-------------------------------------------------------------- */
+.Beforefoot-Sec{
+    margin-top: 60px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.Beforefoot-Sec h1{
+    font-size: 50px;
+}
+.Timeline-Container{
+    width:85%;
+    position: relative;
+}
+
+.Tcontent{
+    background:#56A0D3;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    color: white;
+}
+.Tcontent h2{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: white;
+}
+.Tcontent p{
+    line-height: 1.4;
+    margin: 10px 0;
+    
+}
+.Tcontent .par{
+margin-bottom: 25px;
+}
+.Tcontent .time-p{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: rgb(50, 50, 50);
+    font-size: 17px;
+    font-weight: 600;
+   
+}
+@media (min-width:700px){
+    .Tcontent{
+        width: 50%;
+    }
+}
+.Tcontent:nth-child(odd){
+    float:left;
+    clear:both;
+    transform: translateX(-35px);
+}
+.Tcontent:nth-child(even){
+    float:right;
+    clear:both;
+    transform: translateX(35px);
+}
+.Timeline-Container::before{
+    content: "";
+    width: 1px;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+
+.Tcontent:nth-child(even)::before{
+    left: -33px;
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------------------- */
+/* ************************************************Contact Page************************************************************* */
+/* ------------------------------------------------------------------------------------------------------------------------- */
+
+/*_____________________ Below here is the body */
+.contact-body{
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #121212;
+}
+/* ______________________Below here is the image */
+.newspaper{
+    height: 300px;
+    width: 650px;
+}
+/* _______________________Below here is the sidebar */
+.icons{
+    width: 6%;
+    height: 6%;
+}
+#nav-contact ol{
+    list-style: none;
+}
+#nav-contact a{
+    text-transform: uppercase;
+    text-decoration: none;
+}
+#nav-contact li{
+    display: inline;
+    margin: 1px 8px;
+    padding: 1.8em;
+}
+#nav-contact{
+background-color: rgb(233, 233, 233);
+margin: 50px auto;
+width: 650px;
+padding: 5%;
+text-align: left;
+float: left;
+padding: 0.3em;
+height: 300px;
+border-style: solid;
+}
+.h1-Contact{
+    text-align: left;
+    font-weight: bold;
+}
+/* _____________________Below here is the main */
+#Main-Container-Contact{
+    margin: 50px auto;
+    padding: 5%;
+    float: right;
+    background-color: rgb(233, 233, 233);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    }
+.h2-Contact{
+      text-align: center;
+      color: black;
+    }
+.contact-form label {
+      display: block;
+      margin: 15px 0 5px;
+      font-weight: bold;
+    }
+.contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+.contact-form button {
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: black;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+.contact-form button:hover {
+      background-color: #004998;
+    }
+
+/* Footer for all pages */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #2c3e50;
+  color: #fff;
+}
+.Footer-contact{
+  margin-top: 100px;
+}
+.intro h2{
+  font-size: 44px;
+}
+.about-project h2{
+  text-align: center;
+}
