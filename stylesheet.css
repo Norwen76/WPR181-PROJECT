@@ -458,24 +458,24 @@ margin-bottom: 25px;
     height: 300px;
     width: 650px;
 }
-/* _______________________Below here is the article */
+/* _______________________Below here is the nav */
 .icons{
     width: 6%;
     height: 6%;
 }
-#article-contact ol{
+#nav-contact ol{
     list-style: none;
 }
-#article-contact a{
+#nav-contact a{
     text-transform: uppercase;
     text-decoration: none;
 }
-#article-contact li{
+#nav-contact li{
     display: inline;
     margin: 1px 8px;
     padding: 1.8em;
 }
-#article-contact{
+#nav-contact{
 background-color: rgb(233, 233, 233);
 margin: 50px auto;
 width: 650px;
@@ -547,4 +547,5 @@ footer {
   text-align: center;
 
 }
+
 
